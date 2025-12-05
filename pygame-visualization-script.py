@@ -1,11 +1,13 @@
-# This code is intended to be run in a local Python environment with Pygame and h5py installed.
-# It will not display a window in Google Colab.
-
 import pygame
 import numpy as np
 import h5py # Import h5py
 import time # Import time for potential delays
 import sys
+
+'''
+File takes as input a .h5 file containing simulation logs of a rock-paper-scissors cellular automaton.
+It visualizes the simulation using Pygame, displaying the grid state at each epoch.
+'''
 
 # Try to import tkinter for a GUI file chooser. If unavailable, we'll fall back to
 # a command-line prompt or a default path.
